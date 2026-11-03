@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman">
+  <span class="kode">{{ d.id_destinasi }}</span>
+  <h1>{{ d.tujuan }}</h1>
+  <p class="deskripsi-detail">{{ d.deskripsi }}</p>
+
+  <h2>Jadwal ke tujuan ini</h2>
+  <div class="gulir">
+  <table class="tabel-data">
+    <tr>
+      <th>ID Jadwal</th><th>Berangkat</th><th>Supir</th>
+      <th>Kendaraan</th><th>Sisa kursi</th>
+    </tr>
+    {% for j in jadwal %}
+    <tr>
+      <td>{{ j.id_jadwal }}</td>
+      <td>{{ j.tanggal_berangkat }}</td>
+      <td>{{ j.nama_supir }}</td>
+      <td>{{ j.jenis_kendaraan }} · {{ j.plat_nomor }}</td>
+      <td>{{ j.sisa }} / {{ j.kapasitas }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="5">Belum ada jadwal untuk destinasi ini.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+
+  <p><a class="tombol" href="{{ url_for('destinasi') }}">Kembali ke daftar destinasi</a></p>
+</section>
+{% endblock %}
