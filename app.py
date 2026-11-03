@@ -58,7 +58,7 @@ def logout():
 @app.route("/")
 def beranda():
     unggulan = Destinasi().selectDB()[:3]   
-    return render_template("beranda.html", judul="Beranda", unggulan=unggulan)
+    return render_template("index.html", judul="Beranda", unggulan=unggulan)
 
 @app.route("/destinasi")
 def destinasi():
