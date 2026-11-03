@@ -4,13 +4,13 @@ Deskripsi singkat tentang web
 Web travel ini menyediakan layanan perjalanan yang menawarkan berbagai rute perjalanan dan destinasi
 
 #  Nama anggota kelompok
-Ketua : Nada Shofia Nadhila (252102003)
+Ketua : Nada Shofia Nadhila (252102003):Sebagai Pengembang route Flask, Pengembang template dan tampilan
 
-Anggota: Helna Vika Bastian(252102011)
+Anggota: Helna Vika Bastian(252102011):Sebagai Pengembang route Flask, Pengembang template dan tampilan
 
-Anggota: Dani Hermawan(252102002)
+Anggota: Dani Hermawan(252102002):Sebagai Pengelola database, Pengembang template dan tampilan
 
-Anggota: Satria Wicaksono(252102013)
+Anggota: Satria Wicaksono(252102013):Sebagai Pengembang template dan tampilan, Dokumentator
 
 # Langkah instal environment
 1.Langkah awal kita masuk ke anaconda prompt
@@ -28,32 +28,18 @@ Anggota: Satria Wicaksono(252102013)
 7.Tekan Enter. Tanda di awal baris terminal Anda akan berubah dari (base) menjadi (travel), yang menandakan Anda sudah berhasil masuk ke dalam virtual environment tersebut.
 
 # Langkah Penggunaan 
-1.Buka Anaconda Prompt di komputer Windows Anda
-
-2.Aktifkan virtual environment yang telah dibuat sebelumnya
-
-3.Pastikan indikator di awal baris terminal telah berubah menjadi (travel).
-
-4.Masuk ke Direktori Proyek
-
-5.Arahkan terminal ke folder tempat penyimpanan direktori proyek Anda menggunakan perintah("cd path/ke/folder/travel/proyek-travel")
-
-6.Instalasi Pustaka (Dependensi)
-
-7.Pasang seluruh pustaka Python yang dibutuhkan aplikasi berdasarkan berkas("pip install -r requirements.txt")
-
-8.Jalankan aplikasi Flask:("python app.py")
-
-9.Buka browser dan akses:("http://127.0.0.1:5000/")
-
-10.Konfigurasi dan Penyiapan Database
-
-11.Pastikan server database Anda (seperti MySQL/MariaDB melalui XAMPP atau phpMyAdmin) sudah dalam keadaan aktif.
-
-12.Pastikan database, tabel utama, serta data awal (minimal 20 data per tabel) telah diimpor dengan benar.
-
-13.Pastikan fungsi koneksi database pada kode Anda sudah terhubung dengan baik.
-
+1. Tunjukkan versi Flask (`flask --version`) dan jalankan `python app.py`.
+   
+3. Buka beranda dan halaman Tentang.
+   
+5. Buka daftar destinasi, coba pencarian, lalu buka satu detail.
+   
+7. Buka detail dengan id yang tidak ada (contoh: `/destinasi/XYZ`) untuk menunjukkan halaman 404.
+   
+9. Login sebagai **admin**: lihat supir, kendaraan, jadwal, transaksi, dan user
+    
+11. Login sebagai **user**: lihat jadwal dan transaksi
+    
 # Struktur Proyek
 **Ketik tiga backtick di sini untuk mengawali blok kode:**
 ```text
