@@ -29,7 +29,7 @@ https://github.com/helnavikaunjaya/travel_codecraft/blame/main/app.py
 
 7.Tekan Enter. Tanda di awal baris terminal Anda akan berubah dari (base) menjadi (travel), yang menandakan Anda sudah berhasil masuk ke dalam virtual environment tersebut.
 
-# Langkah Penggunaan 
+# Alur Demonstrasi
 1. Tunjukkan versi Flask (`flask --version`) dan jalankan `python app.py`.
    
 2. Buka beranda dan halaman Tentang.
