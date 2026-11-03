@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman lebar">
+  <h1>Daftar Kendaraan</h1>
+  <table class="tabel-data">
+    <tr><th>ID</th><th>Plat</th><th>Jenis</th><th>Merek</th><th>Kapasitas</th></tr>
+    {% for b in baris %}
+    <tr>
+      <td>{{ b.id_kendaraan }}</td>
+      <td>{{ b.plat_nomor }}</td>
+      <td>{{ b.jenis_kendaraan }}</td>
+      <td>{{ b.merek }}</td>
+      <td>{{ b.kapasitas }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</section>
+{% endblock %}

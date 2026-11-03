@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman form-kecil">
+  <h1>Login</h1>
+  {% if error %}<div class="pesan error">{{ error }}</div>{% endif %}
+  <form class="form" method="post">
+    <label for="username">Username</label>
+    <input id="username" name="username" required autofocus>
+    <label for="password">Password</label>
+    <input id="password" name="password" type="password" required>
+    <button class="tombol" type="submit">Masuk</button>
+  </form>
+</section>
+{% endblock %}
