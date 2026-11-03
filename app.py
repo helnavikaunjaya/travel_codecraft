@@ -73,6 +73,15 @@ def destinasi():
 def daftar_supir():
     return render_template("supir.html", judul="Daftar Supir", baris=Supir().selectDB())
 
+@app.route("/destinasi/<id_destinasi>")
+def detail_destinasi(id_destinasi):
+    d = Destinasi().getDB(id_destinasi)
+    if d is None:               # id tidak ditemukan -> halaman 404
+        abort(404)
+    jadwal_terkait = Jadwal().selectByDestinasi(id_destinasi)
+    return render_template("detail.html", judul="Detail " + d["tujuan"],
+                           d=d, jadwal=jadwal_terkait)
+  
 @app.route("/user")
 @admin_required
 def daftar_user():
