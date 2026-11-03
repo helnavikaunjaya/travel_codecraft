@@ -102,6 +102,7 @@ class Jadwal(Database):
             j["sisa"] = max(int(j["kapasitas"] or 0) - int(j["terisi"]), 0)
         return j
 
+
 class Transaksi(Database):
     def selectDB(self, id_user=None):
         sql = ("SELECT t.id_transaksi, u.nama AS pemesan, d.tujuan, "
