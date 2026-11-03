@@ -6,11 +6,11 @@ Web travel ini menyediakan layanan perjalanan yang menawarkan berbagai rute perj
 #  Nama anggota kelompok
 Ketua : Nada Shofia Nadhila (252102003)
 
-Anggota:Helna Vika Bastian(252102011)
+Anggota: Helna Vika Bastian(252102011)
 
-Anggota:Dani Hermawan(252102002)
+Anggota: Dani Hermawan(252102002)
 
-Anggota:Satria Wicaksono(252102013)
+Anggota: Satria Wicaksono(252102013)
 
 # Langkah instal environment
 1.Langkah awal kita masuk ke anaconda prompt
