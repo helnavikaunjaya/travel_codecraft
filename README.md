@@ -89,4 +89,5 @@ proyek-travel/
 
 11. Detail.html /detail Halaman Menampilkan Jadwal,Jam Keberangkatan,Supir,Sisa Kursi dan juga Kendaraan
 
-12. Base.html / Base berisi tentang 
+12. Base.html / Base berisi tentang Fitur khusus untuk admin(supir,kendaraan ,user) , untuk umum yang sudah login
+   (jadwal,transaksi,profil,keluar) dan umum yang belum login (beranda,tentang,destinasi,login)
