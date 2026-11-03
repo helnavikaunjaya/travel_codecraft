@@ -36,7 +36,7 @@ https://github.com/helnavikaunjaya/travel_codecraft/blame/main/app.py
    
 3. Buka daftar destinasi, coba pencarian, lalu buka satu detail.
    
-4. Buka detail dengan id yang tidak ada (contoh: `/destinasiD25`) untuk menunjukkan halaman 404.
+4. Buka detail dengan id yang tidak ada (contoh: `/destinasi/D25`) untuk menunjukkan halaman 404.
    
 5. Login sebagai **admin**: lihat supir, kendaraan, jadwal, transaksi, dan user
     
