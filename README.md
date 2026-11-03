@@ -89,4 +89,4 @@ proyek-travel/
 
 11. Detail.html /detail Halaman Menampilkan Jadwal,Jam Keberangkatan,Supir,Sisa Kursi dan juga Kendaraan
 
-12.
+12. Base.html / Base berisi tentang 
