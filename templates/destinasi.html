@@ -21,7 +21,13 @@
       <span class="kode">{{ d.id_destinasi }}</span>
       <h3>{{ d.tujuan }}</h3>
       <p>{{ d.deskripsi }}</p>
-    </div>
+    </a>
+    {% else %}
+    {% if q %}
+    <p class="pesan">Tidak ada destinasi yang cocok dengan pencarian "{{ q }}".</p>
+    {% else %}
+    <p class="pesan">Belum ada destinasi yang terdaftar.</p>
+    {% endif %}
     {% endfor %}
   </div>
 </section>
