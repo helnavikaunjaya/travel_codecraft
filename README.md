@@ -30,15 +30,17 @@ Anggota: Satria Wicaksono(252102013):Sebagai Pengembang template dan tampilan, D
 # Langkah Penggunaan 
 1. Tunjukkan versi Flask (`flask --version`) dan jalankan `python app.py`.
    
-3. Buka beranda dan halaman Tentang.
+2. Buka beranda dan halaman Tentang.
    
-5. Buka daftar destinasi, coba pencarian, lalu buka satu detail.
+3. Buka daftar destinasi, coba pencarian, lalu buka satu detail.
    
-7. Buka detail dengan id yang tidak ada (contoh: `/destinasi/XYZ`) untuk menunjukkan halaman 404.
+4. Buka detail dengan id yang tidak ada (contoh: `/destinasi/XYZ`) untuk menunjukkan halaman 404.
    
-9. Login sebagai **admin**: lihat supir, kendaraan, jadwal, transaksi, dan user
+5. Login sebagai **admin**: lihat supir, kendaraan, jadwal, transaksi, dan user
     
-11. Login sebagai **user**: lihat jadwal dan transaksi
+6. Login sebagai **user**: lihat jadwal dan transaksi
+
+7. Contoh:usn: admin pw:admin123 dan usn:uwon pw: uwon123
     
 # Struktur Proyek
 **Ketik tiga backtick di sini untuk mengawali blok kode:**
