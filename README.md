@@ -33,30 +33,42 @@ Anggota:Satria Wicaksono(252102013)
 12.Pastikan database, tabel utama, serta data awal (minimal 20 data per tabel) telah diimpor dengan benar.
 13.Pastikan fungsi koneksi database pada kode Anda sudah terhubung dengan baik.
 
-## Struktur Proyek
-
-```text
-travel/
-└── proyek-travel/
-    ├── app.py                     # Main Flask Application
-    ├── requirements.txt           # Dependensi Python
-    ├── static/
-    │   └── css/
-    │       └── style.css          # Kustomisasi gaya tampilan UI
-    └── templates/                 # Halaman HTML (Jinja2 Templates)
-        ├── base.html              # Layout utama
-        ├── 404.html               # Halaman error 404
-        ├── index.html             # Halaman utama / beranda
-        ├── login.html             # Halaman masuk sistem
-        ├── destinasi.html         # Daftar destinasi perjalanan
-        ├── detail.html            # Detail rute/destinasi
-        ├── jadwal.html            # Jadwal keberangkatan
-        ├── kendaraan.html         # Daftar unit kendaraan
-        ├── supir.html             # Data pengemudi
-        ├── pesan.html             # Form pemesanan tiket
-        ├── transaksi.html         # Riwayat & rincian transaksi
-        ├── user.html              # Profil / manajemen user
-        ├── tentang.html           # Informasi aplikasi
+# Struktur Proyek
+proyek-travel/
+├── .vscode/
+│   └── settings.json
+├── __pycache__/
+│   ├── config.cpython-39.pyc
+│   └── models.cpython-39.pyc
+├── static/
+│   └── css/
+│       └── style.css
+├── templates/
+│   ├── 404.html
+│   ├── base.html
+│   ├── beranda.html
+│   ├── destinasi.html
+│   ├── jadwal.html
+│   ├── kendaraan.html
+│   ├── login.html
+│   ├── supir.html
+│   ├── tentang.html
+│   ├── transaksi.html
+│   └── user.html
+├── app.py
+├── config.py
+├── models.py
+└── requirements.txt
         ├── form_destinasi.html    # Form kelola destinasi (Admin)
         └── form_jadwal.html       # Form kelola jadwal (Admin)
 # Route dan Halaman Aplikasi
+1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
+2.tentang.html   /tentang   Halaman informasi mengenai profil atau deskripsi singkat tentang aplikasi travel.
+3.destinasi.html   /destinasi   Halaman yang menampilkan daftar pilihan tujuan atau rute perjalanan wisata.
+4.jadwal.html   /jadwal   Halaman yang menampilkan daftar jadwal keberangkatan armada travel.
+5.kendaraan.html   /kendaraan   Halaman yang menampilkan data unit armada kendaraan yang tersedia.
+6.supir.html   /supir   Halaman yang menampilkan data pengemudi (supir) yang bertugas.
+7.transaksi.html   /transaksi   Halaman yang mencatat riwayat serta rincian pembayaran atau transaksi tiket.
+8.user.html   /user   Halaman untuk melihat atau mengelola informasi profil akun pengguna.
+9.login.html   /login   Halaman masuk sistem bagi pengguna atau administrator.
+10.404.html   (Penanganan Error)   Halaman khusus yang otomatis muncul apabila pengguna mengakses URL yang tidak ditemukan di dalam sistem.
