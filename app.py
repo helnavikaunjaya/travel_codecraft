@@ -64,8 +64,6 @@ def beranda():
 def destinasi():
     q = request.args.get("q", "").strip()
     daftar = Destinasi().selectDB(q)
-    if q and not daftar:       
-        abort(404)
     return render_template("destinasi.html", judul="Daftar Destinasi", daftar=daftar, q=q)
   
 @app.route("/supir")
@@ -76,7 +74,7 @@ def daftar_supir():
 @app.route("/destinasi/<id_destinasi>")
 def detail_destinasi(id_destinasi):
     d = Destinasi().getDB(id_destinasi)
-    if d is None:               # id tidak ditemukan -> halaman 404
+    if d is None:
         abort(404)
     jadwal_terkait = Jadwal().selectByDestinasi(id_destinasi)
     return render_template("detail.html", judul="Detail " + d["tujuan"],
