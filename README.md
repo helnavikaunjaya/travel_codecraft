@@ -89,7 +89,8 @@ proyek-travel/
 ├── config.py
 ├── models.py
 └── requirements.txt
-# Route dan Halaman Aplikasi
+
+# **Route dan Halaman Aplikasi**
 1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
 
 2.tentang.html   /tentang   Halaman informasi mengenai profil atau deskripsi singkat tentang aplikasi travel.
