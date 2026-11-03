@@ -12,6 +12,8 @@ Anggota: Dani Hermawan(252102002):Sebagai Pengelola database, Pengembang templat
 
 Anggota: Satria Wicaksono(252102013):Sebagai Pengembang template dan tampilan, Dokumentator
 
+https://github.com/helnavikaunjaya/travel_codecraft/blame/main/app.py
+
 # Langkah instal environment
 1.Langkah awal kita masuk ke anaconda prompt
 
