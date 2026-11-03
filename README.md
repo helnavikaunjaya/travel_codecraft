@@ -86,3 +86,7 @@ proyek-travel/
 9.login.html   /login   Halaman masuk sistem bagi pengguna atau administrator.
 
 10.404.html   (Penanganan Error)   Halaman khusus yang otomatis muncul apabila pengguna mengakses URL yang tidak ditemukan di dalam sistem.
+
+11. Detail.html /detail Halaman Menampilkan Jadwal,Jam Keberangkatan,Supir,Sisa Kursi dan juga Kendaraan
+
+12.
