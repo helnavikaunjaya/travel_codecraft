@@ -27,7 +27,7 @@ class Database:
             self.db.close()
 
     def select(self, sql, params=()):
-        """SELECT -> semua baris (list of dict)."""
+        ""SELECT -> semua baris (list of dict).""
         self.openDB()
         self.cursor.execute(sql, params)
         data = self.cursor.fetchall()
@@ -35,7 +35,7 @@ class Database:
         return data
 
     def selectOne(self, sql, params=()):
-        """SELECT -> satu baris (dict), atau None kalau tidak ada."""
+        ""SELECT -> satu baris (dict), atau None kalau tidak ada.""
         self.openDB()
         self.cursor.execute(sql, params)
         data = self.cursor.fetchone()
@@ -89,7 +89,7 @@ class Jadwal(Database):
            "LEFT JOIN kendaraan k ON k.id_kendaraan = j.id_kendaraan ")
 
     def selectDB(self, dari_tanggal=None):
-        """Semua jadwal; kalau dari_tanggal diisi, hanya yang belum berangkat."""
+        ""Semua jadwal; kalau dari_tanggal diisi, hanya yang belum berangkat.""
         if dari_tanggal:
             baris = self.select(self.SQL + "WHERE j.tanggal_berangkat >= %s "
                                 "ORDER BY j.tanggal_berangkat, j.id_jadwal", (dari_tanggal,))
