@@ -62,7 +62,7 @@ def logout():
 
 @app.route("/")
 def beranda():
-    unggulan = Destinasi().selectDB()[:3]      # 3 destinasi pertama untuk cuplikan
+    unggulan = Destinasi().selectDB()[:3]   
     return render_template("beranda.html", judul="Beranda", unggulan=unggulan)
 
 
@@ -70,7 +70,7 @@ def beranda():
 def destinasi():
     q = request.args.get("q", "").strip()
     daftar = Destinasi().selectDB(q)
-    if q and not daftar:        # pencarian tanpa hasil -> halaman 404
+    if q and not daftar:       
         abort(404)
     return render_template("destinasi.html", judul="Daftar Destinasi", daftar=daftar, q=q)
 
@@ -95,7 +95,7 @@ def daftar_kendaraan():
 def jadwal():
     if session["user"]["role"] == "admin":
         baris = Jadwal().selectDB()
-    else:                       # user biasa hanya melihat jadwal yang belum berangkat
+    else:
         baris = Jadwal().selectDB(date.today().isoformat())
     return render_template("jadwal.html", judul="Jadwal Perjalanan", baris=baris)
 
