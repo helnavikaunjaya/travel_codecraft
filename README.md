@@ -58,26 +58,14 @@ Anggota:Satria Wicaksono(252102013)
 **Ketik tiga backtick di sini untuk mengawali blok kode:**
 ```text
 proyek-travel/
-├── .vscode/
-│   └── settings.json
-├── app.py
-└── requirements.txt
-proyek-travel/
-├── .vscode/
-│   └── settings.json
-├── __pycache__/
-│   ├── config.cpython-39.pyc
-│   └── models.cpython-39.pyc
 ├── static/
 │   └── css/
 │       └── style.css
 ├── templates/
 │   ├── 404.html
 │   ├── base.html
-│   ├── beranda.html
+│   ├── index.html
 │   ├── destinasi.html
-│   ├── form_destinasi.html      # Form kelola destinasi (Admin)
-│   ├── form_jadwal.html         # Form kelola jadwal (Admin)
 │   ├── jadwal.html
 │   ├── kendaraan.html
 │   ├── login.html
@@ -91,7 +79,7 @@ proyek-travel/
 └── requirements.txt
 
 #**Route dan Halaman Aplikasi**
-1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
+1.index.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
 
 2.tentang.html   /tentang   Halaman informasi mengenai profil atau deskripsi singkat tentang aplikasi travel.
 
