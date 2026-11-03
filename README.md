@@ -23,17 +23,29 @@ Anggota:Satria Wicaksono(252102013)
 
 # Langkah Penggunaan 
 1.Buka Anaconda Prompt di komputer Windows Anda
+
 2.Aktifkan virtual environment yang telah dibuat sebelumnya
+
 3.Pastikan indikator di awal baris terminal telah berubah menjadi (travel).
+
 4.Masuk ke Direktori Proyek
+
 5.Arahkan terminal ke folder tempat penyimpanan direktori proyek Anda menggunakan perintah("cd path/ke/folder/travel/proyek-travel")
+
 6.Instalasi Pustaka (Dependensi)
+
 7.Pasang seluruh pustaka Python yang dibutuhkan aplikasi berdasarkan berkas("pip install -r requirements.txt")
+
 8.Jalankan aplikasi Flask:("python app.py")
+
 9.Buka browser dan akses:("http://127.0.0.1:5000/")
+
 10.Konfigurasi dan Penyiapan Database
+
 11.Pastikan server database Anda (seperti MySQL/MariaDB melalui XAMPP atau phpMyAdmin) sudah dalam keadaan aktif.
+
 12.Pastikan database, tabel utama, serta data awal (minimal 20 data per tabel) telah diimpor dengan benar.
+
 13.Pastikan fungsi koneksi database pada kode Anda sudah terhubung dengan baik.
 
 # Struktur Proyek
