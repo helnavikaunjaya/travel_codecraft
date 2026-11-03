@@ -101,6 +101,14 @@ class Jadwal(Database):
         if j:
             j["sisa"] = max(int(j["kapasitas"] or 0) - int(j["terisi"]), 0)
         return j
+        
+    def selectByDestinasi(self, id_destinasi):
+        baris = self.select(self.SQL + "WHERE d.id_destinasi = %s "
+                            "ORDER BY j.tanggal_berangkat, j.id_jadwal",
+                            (id_destinasi,))
+        for b in baris:
+            b["sisa"] = max(int(b["kapasitas"] or 0) - int(b["terisi"]), 0)
+        return baris
 
 
 class Transaksi(Database):
