@@ -73,17 +73,17 @@ def destinasi():
     if q and not daftar:       
         abort(404)
     return render_template("destinasi.html", judul="Daftar Destinasi", daftar=daftar, q=q)
-
-@app.route("/user")
-@admin_required
-def daftar_user():
-    return render_template("user.html", judul="Daftar User", users=User().selectDB())
-
+  
 @app.route("/supir")
 @admin_required
 def daftar_supir():
     return render_template("supir.html", judul="Daftar Supir", baris=Supir().selectDB())
 
+@app.route("/user")
+@admin_required
+def daftar_user():
+    return render_template("user.html", judul="Daftar User", users=User().selectDB())
+  
 @app.route("/kendaraan")
 @admin_required
 def daftar_kendaraan():
