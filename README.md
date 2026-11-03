@@ -61,6 +61,7 @@ proyek-travel/
 └── requirements.txt
         ├── form_destinasi.html    # Form kelola destinasi (Admin)
         └── form_jadwal.html       # Form kelola jadwal (Admin)
+        
 # Route dan Halaman Aplikasi
 1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
 2.tentang.html   /tentang   Halaman informasi mengenai profil atau deskripsi singkat tentang aplikasi travel.
