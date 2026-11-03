@@ -17,7 +17,7 @@
   <h2>Semua destinasi</h2>
   <div class="kartu-grid">
     {% for d in daftar %}
-    <div class="kartu">
+    <a class="kartu" href="{{ url_for('detail_destinasi', id_destinasi=d.id_destinasi) }}">
       <span class="kode">{{ d.id_destinasi }}</span>
       <h3>{{ d.tujuan }}</h3>
       <p>{{ d.deskripsi }}</p>
