@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman tentang">
+  <h1>Tentang Codecraft Travel</h1>
+  <p class="pembuka">Codecraft Travel adalah layanan perjalanan darat antarkota yang
+     menghubungkan kota-kota besar dengan destinasi wisata favorit di Indonesia.
+     Kami ingin perjalanan terasa sederhana: pilih tujuan, pilih jadwal,
+     lalu berangkat dengan tenang.</p>
+
+  <h2>Layanan kami</h2>
+  <table class="tabel-sederhana">
+    <tr><th>Layanan</th><th>Keterangan</th></tr>
+    <tr><td>Perjalanan antarkota</td><td>Rute darat ke berbagai destinasi wisata di Indonesia</td></tr>
+    <tr><td>Armada terawat</td><td>Kendaraan dengan kapasitas penumpang yang jelas untuk tiap keberangkatan</td></tr>
+    <tr><td>Supir berpengalaman</td><td>Pengemudi yang ditugaskan untuk setiap jadwal perjalanan</td></tr>
+    <tr><td>Jadwal &amp; pemesanan</td><td>Tanggal berangkat, sisa kursi, dan status pembayaran bisa dipantau</td></tr>
+  </table>
+
+  <p style="margin-top:22px">
+    <a class="tombol" href="{{ url_for('destinasi') }}">Jelajahi destinasi</a>
+  </p>
+</section>
+{% endblock %}

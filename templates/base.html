@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ judul }} · Codecraft Travel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header class="navbar">
+    <a class="brand" href="{{ url_for('beranda') }}">Codecraft <span>Travel</span></a>
+    <nav>
+      <a href="{{ url_for('beranda') }}">Beranda</a>
+      <a href="{{ url_for('tentang') }}">Tentang</a>
+      <a href="{{ url_for('destinasi') }}">Destinasi</a>
+      {% if user %}
+        {% if user.role == 'admin' %}
+        <a href="{{ url_for('daftar_supir') }}">Supir</a>
+        <a href="{{ url_for('daftar_kendaraan') }}">Kendaraan</a>
+        {% endif %}
+        <a href="{{ url_for('jadwal') }}">Jadwal</a>
+        <a href="{{ url_for('transaksi') }}">Transaksi</a>
+        {% if user.role == 'admin' %}
+        <a href="{{ url_for('daftar_user') }}">User</a>
+        {% endif %}
+        <span class="sapaan">{{ user.nama }} <span class="lencana {{ user.role }}">{{ user.role }}</span></span>
+        <form class="keluar" method="post" action="{{ url_for('logout') }}"><button type="submit">Logout</button></form>
+      {% else %}
+        <a href="{{ url_for('login') }}">Login</a>
+      {% endif %}
+    </nav>
+  </header>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    <p>Codecraft Travel · tugas Flask + MySQL · © 2026</p>
+  </footer>
+</body>
+</html>

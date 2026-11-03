@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero-beranda">
+  <div class="hero-isi">
+  <h1>Perjalanan darat<br>yang nyaman &amp; terjadwal.</h1>
+  <p class="lead">Codecraft Travel menghubungkan kota-kota besar dengan destinasi wisata favorit di Indonesia, dengan armada terawat dan pengemudi berpengalaman.</p>
+  <a class="tombol" href="{{ url_for('destinasi') }}">Lihat destinasi</a>
+  {% if user %}
+  <a class="tombol sekunder" href="{{ url_for('jadwal') }}">Cek jadwal</a>
+  {% else %}
+  <a class="tombol sekunder" href="{{ url_for('login') }}">Login untuk memesan</a>
+  {% endif %}
+  </div>
+</section>
+
+<section class="seksi">
+  <h2>Kenapa Codecraft Travel?</h2>
+  <div class="kartu-grid">
+    <div class="kartu">
+      <span class="kode">01</span>
+      <h3>Armada terawat</h3>
+      <p>Kendaraan dicek berkala supaya perjalanan aman dan nyaman sampai tujuan.</p>
+    </div>
+    <div class="kartu">
+      <span class="kode">02</span>
+      <h3>Supir berpengalaman</h3>
+      <p>Setiap perjalanan dipandu pengemudi yang hafal rute dan kondisi jalan.</p>
+    </div>
+    <div class="kartu">
+      <span class="kode">03</span>
+      <h3>Jadwal jelas</h3>
+      <p>Tanggal berangkat dan sisa kursi bisa dilihat langsung sebelum memesan.</p>
+    </div>
+  </div>
+</section>
+
+{% if unggulan %}
+<section class="seksi">
+  <h2>Destinasi pilihan</h2>
+  <div class="kartu-grid">
+    {% for d in unggulan %}
+    <div class="kartu">
+      <span class="kode">{{ d.id_destinasi }}</span>
+      <h3>{{ d.tujuan }}</h3>
+      <p>{{ d.deskripsi }}</p>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="keterangan"><a href="{{ url_for('destinasi') }}">Lihat semua destinasi &rarr;</a></p>
+</section>
+{% endif %}
+{% endblock %}

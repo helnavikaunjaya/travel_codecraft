@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <h1>Pilih tujuan<br>perjalananmu.</h1>
+  <p class="lead">Layanan perjalanan darat antarkota dengan armada terawat dan pengemudi berpengalaman.</p>
+  <form class="cari" method="get">
+    <input type="search" name="q" value="{{ q }}" placeholder="Cari tujuan">
+    <button type="submit">Cari</button>
+    {% if q %}<a class="hapus" href="{{ url_for('destinasi') }}">Reset</a>{% endif %}
+  </form>
+</section>
+<section class="statistik">
+  <div class="angka">{{ daftar|length }}</div>
+  <p>destinasi siap ditempuh.</p>
+</section>
+<section class="unggulan">
+  <h2>Semua destinasi</h2>
+  <div class="kartu-grid">
+    {% for d in daftar %}
+    <div class="kartu">
+      <span class="kode">{{ d.id_destinasi }}</span>
+      <h3>{{ d.tujuan }}</h3>
+      <p>{{ d.deskripsi }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

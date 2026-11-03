@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman lebar">
+  <h1>Jadwal Perjalanan</h1>
+
+  <div class="gulir">
+  <table class="tabel-data">
+    <tr>
+      <th>ID</th><th>Berangkat</th><th>Tujuan</th><th>Supir</th>
+      <th>Kendaraan</th><th>Sisa kursi</th>
+    </tr>
+    {% for b in baris %}
+    <tr>
+      <td>{{ b.id_jadwal }}</td>
+      <td>{{ b.tanggal_berangkat }}</td>
+      <td>{{ b.tujuan }}</td>
+      <td>{{ b.nama_supir }}</td>
+      <td>{{ b.jenis_kendaraan }} · {{ b.plat_nomor }}</td>
+      <td>{{ b.sisa }} / {{ b.kapasitas }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="6">Belum ada jadwal.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</section>
+{% endblock %}
