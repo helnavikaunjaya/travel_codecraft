@@ -12,11 +12,9 @@ app.config["SECRET_KEY"] = config.SECRET_KEY
 def rupiah(angka):
     return "Rp {:,}".format(int(angka)).replace(",", ".")
 
-
 @app.context_processor
 def kirim_user():
     return {"user": session.get("user")}
-
 
 def login_required(f):
     @wraps(f)
@@ -25,8 +23,7 @@ def login_required(f):
             return redirect(url_for("login"))
         return f(*args, **kwargs)
     return cek
-
-
+  
 def admin_required(f):
     @wraps(f)
     def cek(*args, **kwargs):
@@ -41,7 +38,6 @@ def admin_required(f):
 def tentang():
     return render_template("tentang.html", judul="Tentang")
 
-
 @app.route("/login", methods=["GET", "POST"])
 def login():
     error = None
@@ -54,7 +50,6 @@ def login():
         error = "Username atau password salah."
     return render_template("login.html", judul="Login", error=error)
 
-
 @app.route("/logout", methods=["POST"])
 def logout():
     session.clear()
@@ -64,7 +59,6 @@ def logout():
 def beranda():
     unggulan = Destinasi().selectDB()[:3]   
     return render_template("beranda.html", judul="Beranda", unggulan=unggulan)
-
 
 @app.route("/destinasi")
 def destinasi():
