@@ -14,11 +14,17 @@ Anggota:Satria Wicaksono(252102013)
 
 # Langkah instal environment
 1.Langkah awal kita masuk ke anaconda prompt
+
 2.Membuat eirtual environment baru karna kita travel maka kita ketik("conda create -n travel python=3.9")
+
 3.Saat muncul pertanyaan konfirmasi seperti Proceed ([y]/n)?, ketik huruf y lalu tekan Enter untuk melanjutkan proses pengunduhan dan instalasi paket.
+
 4.Tunggu hingga proses selesai dan kursor kembali menampilkan baris perintah baru.
+
 5.Masuk / Mengaktifkan Virtual Environment
+
 6.Setelah environment berhasil dibuat, ketik perintah berikut untuk masuk ke dalamnya:("conda activate travel")
+
 7.Tekan Enter. Tanda di awal baris terminal Anda akan berubah dari (base) menjadi (travel), yang menandakan Anda sudah berhasil masuk ke dalam virtual environment tersebut.
 
 # Langkah Penggunaan 
