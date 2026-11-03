@@ -5,8 +5,11 @@ Web travel ini menyediakan layanan perjalanan yang menawarkan berbagai rute perj
 
 #  Nama anggota kelompok
 Ketua : Nada Shofia Nadhila (252102003)
+
 Anggota:Helna Vika Bastian(252102011)
+
 Anggota:Dani Hermawan(252102002)
+
 Anggota:Satria Wicaksono(252102013)
 
 # Langkah instal environment
@@ -64,12 +67,21 @@ proyek-travel/
         
 # Route dan Halaman Aplikasi
 1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
+
 2.tentang.html   /tentang   Halaman informasi mengenai profil atau deskripsi singkat tentang aplikasi travel.
+
 3.destinasi.html   /destinasi   Halaman yang menampilkan daftar pilihan tujuan atau rute perjalanan wisata.
+
 4.jadwal.html   /jadwal   Halaman yang menampilkan daftar jadwal keberangkatan armada travel.
+
 5.kendaraan.html   /kendaraan   Halaman yang menampilkan data unit armada kendaraan yang tersedia.
+
 6.supir.html   /supir   Halaman yang menampilkan data pengemudi (supir) yang bertugas.
+
 7.transaksi.html   /transaksi   Halaman yang mencatat riwayat serta rincian pembayaran atau transaksi tiket.
+
 8.user.html   /user   Halaman untuk melihat atau mengelola informasi profil akun pengguna.
+
 9.login.html   /login   Halaman masuk sistem bagi pengguna atau administrator.
+
 10.404.html   (Penanganan Error)   Halaman khusus yang otomatis muncul apabila pengguna mengakses URL yang tidak ditemukan di dalam sistem.
