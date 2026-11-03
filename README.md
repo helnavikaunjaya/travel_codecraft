@@ -55,6 +55,13 @@ Anggota:Satria Wicaksono(252102013)
 13.Pastikan fungsi koneksi database pada kode Anda sudah terhubung dengan baik.
 
 # Struktur Proyek
+**Ketik tiga backtick di sini untuk mengawali blok kode:**
+```text
+proyek-travel/
+├── .vscode/
+│   └── settings.json
+├── app.py
+└── requirements.txt
 proyek-travel/
 ├── .vscode/
 │   └── settings.json
