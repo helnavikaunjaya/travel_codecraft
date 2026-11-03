@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman">
+  <h1>Daftar User</h1>
+  <table class="tabel-data">
+    <tr><th>ID</th><th>Nama</th><th>Username</th><th>Role</th></tr>
+    {% for u in users %}
+    <tr>
+      <td>{{ u.id_user }}</td>
+      <td>{{ u.nama }}</td>
+      <td>{{ u.username }}</td>
+      <td><span class="lencana {{ u.role }}">{{ u.role }}</span></td>
+    </tr>
+    {% endfor %}
+  </table>
+</section>
+{% endblock %}

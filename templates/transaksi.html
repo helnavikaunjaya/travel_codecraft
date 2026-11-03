@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="halaman lebar">
+  <h1>{{ judul }}</h1>
+
+  <div class="gulir">
+  <table class="tabel-data">
+    <tr>
+      <th>ID</th>{% if admin %}<th>Pemesan</th>{% endif %}<th>Tujuan</th><th>Berangkat</th>
+      <th>Tgl bayar</th><th>Jumlah</th><th>Harga</th><th>Status</th>
+    </tr>
+    {% for t in baris %}
+    <tr>
+      <td>{{ t.id_transaksi }}</td>
+      {% if admin %}<td>{{ t.pemesan }}</td>{% endif %}
+      <td>{{ t.tujuan }}</td>
+      <td>{{ t.tanggal_berangkat }}</td>
+      <td>{{ t.tanggal_bayar }}</td>
+      <td>{{ t.jumlah }}</td>
+      <td>{{ t.harga|rupiah }}</td>
+      <td><span class="lencana {{ t.status_bayar }}">{{ t.status_bayar }}</span></td>
+    </tr>
+    {% else %}
+    <tr><td colspan="8">Belum ada transaksi.</td></tr>
+    {% endfor %}
+  </table>
+  </div>
+</section>
+{% endblock %}
