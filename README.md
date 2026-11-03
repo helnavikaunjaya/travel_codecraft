@@ -51,6 +51,8 @@ proyek-travel/
 │   ├── base.html
 │   ├── beranda.html
 │   ├── destinasi.html
+│   ├── form_destinasi.html      # Form kelola destinasi (Admin)
+│   ├── form_jadwal.html         # Form kelola jadwal (Admin)
 │   ├── jadwal.html
 │   ├── kendaraan.html
 │   ├── login.html
@@ -62,9 +64,6 @@ proyek-travel/
 ├── config.py
 ├── models.py
 └── requirements.txt
-        ├── form_destinasi.html    # Form kelola destinasi (Admin)
-        └── form_jadwal.html       # Form kelola jadwal (Admin)
-        
 # Route dan Halaman Aplikasi
 1.beranda.html   / atau /beranda   Halaman utama atau beranda yang menyambut pengguna saat pertama kali mengakses aplikasi.
 
