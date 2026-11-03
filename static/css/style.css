@@ -104,6 +104,12 @@ body {
 .kartu p { font-size: 0.92rem; }
 .kode { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: #4C605C; }
 
+a.kartu { text-decoration: none; color: var(--tinta); display: block; }
+a.kartu:hover { border-color: var(--coklat-muda); }
+a.kartu h3 { color: var(--dark-brown); }
+
+.deskripsi-detail { max-width: 62ch; margin-bottom: 26px; }
+
 .halaman { padding: 6vh 5vw; max-width: 900px; }
 
 .halaman h1 {
