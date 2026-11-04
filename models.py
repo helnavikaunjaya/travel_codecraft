@@ -66,14 +66,13 @@ class Destinasi(Database):
     def getDB(self, id_destinasi):
         return self.selectOne("SELECT * FROM destinasi WHERE id_destinasi = %s",
                               (id_destinasi,))
+class Kendaraan(Database):
+    def selectDB(self):
+        return self.select("SELECT * FROM kendaraan ORDER BY id_kendaraan")
 
 class Supir(Database):
     def selectDB(self):
         return self.select("SELECT * FROM supir ORDER BY id_supir")
-
-class Kendaraan(Database):
-    def selectDB(self):
-        return self.select("SELECT * FROM kendaraan ORDER BY id_kendaraan")
 
 
 class Jadwal(Database):
