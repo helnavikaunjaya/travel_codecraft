@@ -102,7 +102,7 @@ body {
 }
 .kartu h3 { font-family: Georgia, serif; margin: 4px 0 6px; color: var(--tinta); }
 .kartu p { font-size: 0.92rem; }
-.kode { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: #4C605C; }
+.kode { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; color: var(--coksu); }
 
 a.kartu { text-decoration: none; color: var(--tinta); display: block; }
 a.kartu:hover { border-color: var(--coklat-muda); }
@@ -181,7 +181,7 @@ footer {
   padding: 20px 5vw;
   border-top: 1px solid var(--garis);
   font-size: 0.85rem;
-  color: #4C605C;
+  color: var(--tinta);
 }
 
 code {
