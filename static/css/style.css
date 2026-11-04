@@ -86,7 +86,6 @@ body {
 .unggulan { margin: 0 5vw; padding: 5vh 0 7vh; max-width: 900px; }
 .unggulan h2 { font-family: Georgia, serif; color: var(--dark-brown); margin-bottom: 14px; }
 
-/* kartu info saja: datar, tanpa hover, tanpa aksen warna, tidak terlihat bisa diklik */
 .kartu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
