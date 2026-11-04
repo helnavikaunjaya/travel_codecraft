@@ -4,13 +4,13 @@ Deskripsi singkat tentang web
 Web travel ini menyediakan layanan perjalanan yang menawarkan berbagai rute perjalanan dan destinasi
 
 #  Nama anggota kelompok
-Ketua : Nada Shofia Nadhila (252102003):Sebagai Pengembang route Flask, Pengembang template dan tampilan
+Ketua : Nada Shofia Nadhila (252102003):Sebagai Pengembang route Flask, Pengembang template dan tampilan, Pengelola Database
 
-Anggota: Helna Vika Bastian(252102011):Sebagai Pengembang route Flask, Pengembang template dan tampilan
+Anggota: Helna Vika Bastian(252102011):Sebagai Pengembang route Flask, Pengembang template dan tampilan,Pengelola Database
 
 Anggota: Dani Hermawan(252102002):Sebagai Pengelola database, Pengembang template dan tampilan
 
-Anggota: Satria Wicaksono(252102013):Sebagai Pengembang template dan tampilan, Dokumentator
+Anggota: Satria Wicaksono(252102013):Sebagai Pengembang template dan tampilan, Dokumentator.Pengelola Database
 
 https://github.com/helnavikaunjaya/travel_codecraft/blame/main/app.py
 
