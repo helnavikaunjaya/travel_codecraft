@@ -231,7 +231,7 @@ code {
 .lencana.BELUM { background: #FBE9CF; color: #7A4A06; }
 
 .hero-beranda {
-  background: linear-gradient(135deg, var(--coksu) 0%, var(--coksu) 100%);
+  background: linear-gradient(135deg, var(--coklat-muda) 0%, var(--coksu) 100%);
   color: #fff;
   padding: 12vh 5vw 11vh;
 }
